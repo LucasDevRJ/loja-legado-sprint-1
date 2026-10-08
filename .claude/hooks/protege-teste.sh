@@ -11,7 +11,7 @@ case "$FILE" in
     #       Lembre: o file_path chega ABSOLUTO (/home/lucas/loja-legado-sprint1/test/...).
     #       Dica: no case do bash, * casa qualquer coisa.
     
-    */test/cupom.test.ts) bloquear "test/cupom.test.ts é o critério de aceite da PO e não pode ser alterado. Corrija o código, não o teste." ;;
+    */.claude/hooks/*|*/.claude/settings.json|*/.claude/settings.local.json) bloquear "o harness (.claude/hooks e settings) não pode ser alterado pelo agente." ;;
 esac
 
 exit 0
